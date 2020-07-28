@@ -1,6 +1,7 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
-  <head>
+<head>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,16 +14,87 @@
     <![endif]-->
 
     <title>Boostrap Starter Page</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\styles.css">
+</head>
 <body>
+    <header>
+    <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="Index.html" class="pull-left">
+                    <div id="logo-img" alt="Logo Image"></div>
+                </a>
+                <div class="navbar-brand" id="toTop"> 
+                    <a href=index.html> <h1>Food, LLC</h1></a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="collapsable-nav" class="collapsed navbar-collapse collapse">
+                <ul id="nav-list" class="nav navbar-nav navbar-right col-xs-12">
+                    <li>
+                        <a href="#chicken" id="_chicken" class="visible-xs" onclick="play()">Chicken</a> <audio src="\fx\chicken.mp3" id="audio"></audio>
+                    </li>
+                   
+                    <li>
+                        <a href="#beef" id="_beef" class="visible-xs" onclick="play2()">Beef</a> <audio src="\fx\cow.mp3" id="audio2"></audio>
+                    </li>
+                    
+                    <li>
+                        <a href="#sushi" id="_sushi" class="visible-xs" onclick="play3()">Sushi</a> <audio src="\fx\sushi.mp3" id="audio3"></audio>   
+                    </li>
+                   
+                    <li>
+                        <a href="javascript:alert('Under Construction!');" id="_career" class="visible-xs">Careers</a>
+                    </li>
+                </ul>
 
-  <h1>Hello Coursera!</h1>
+           </div>
+       </div>
+        </nav>
+      
+        
+    </header>
 
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-1.11.3.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
+
+    <h2 class="text-center">The Menu</h2>
+    <div class="chicken col-sm-6 col-md-4">
+
+        <div class="_chicken text-center" id="chicken"><h3>Chicken</h3><p>
+    Where does it come from?
+    C. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+r randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+</p><div id="toTop"><a href="#toTop" class="toTop">back to top</a></div></div>
+           </div>
+
+    <div class="beef col-sm-6 col-md-4 ">
+
+        <div class="_beef text-center" id="beef"><h3>Beef</h3><p>"Sed ut perspiciatis unsquam est, qui dolont ut labore et dolore magns nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum qui, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p><div id="toTop"><a href="#toTop" class="toTop">back to top</a></div></div>
+        
+    </div>
+
+    <div class="sushi col-md-4 col-xs-12">
+
+        <div class="_sushi text-center" id="sushi">
+            <h3>Sushi</h3><section>
+    Gobbledygook
+    The term "gobbledygook" has a long history of usage in politics. Nixon's Oval Office tape from June 14, 1971, showed H. R. Haldeman describing a situation to Nixon as "... a bunch of gobbledygook. But out of the gobbledygook comes a very clear thing: You can't trust the government; you can't believe what they say."[22] President Ronald Reagan explained tax law revisions in an address to the nation with the word, May 28, 1985, saying that "most didn’t improve the system; they made it more like Washington itself: Complicated, unfair, cluttered with gobbledygook and loopholes designed for those with the power and influence to hire high-priced legal and tax advisers."[23] In 2017, US Supreme Court justice John Roberts dismissed quantitative sociological reasoning as "gobbledygook" in arguing against any numerical test for gerrymandering.[24]
+
+    Michael Shanks, former chairman to the National Consumer Council of Great Britain, characterisis for a democracy."[25]
+</section><div id="toTop"><a href="#toTop" class="toTop">back to top</a></div>
+        </div>
+    </div>
+    
+    
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
+    </body>
 </html>
